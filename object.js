@@ -30,3 +30,27 @@ myCoffee.reheat();
 Exception: ReferenceError: myCOffee is not defined
 @Scratchpad/5:26:1
 */
+
+
+var mark = {
+  name: "Mark",
+  tshirtColor: "Blue"
+};
+
+function Friend(name,tshirtColor){
+  this.name = name;
+  this.tshirtColor = tshirtColor;
+}
+
+var denny = new Friend("Abhi","Blue");
+console.log(denny);
+console.log(denny.name);
+console.log(denny.tshirtColor);
+/*
+Exception: SyntaxError: missing ; before statement
+@Scratchpad/5:45
+*/
+/*
+Exception: SyntaxError: missing ; before statement
+@Scratchpad/5:45
+*/
