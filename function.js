@@ -11,3 +11,4 @@ function sayHello(name){
 }
 for(i =0;i<10;i++)
   sayHello(i);
+sayHello('Hi MArk');
