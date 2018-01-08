@@ -11,6 +11,22 @@ var myCoffee = {
   flavour : "espresso",
   temperature: "piping hot",
   ounces: 100,
-  milk: true
+  milk: true,
+  
+  reheat: function(){
+    if(myCoffee.temperature === 'cold'){
+        myCoffee.temperature = 'piping hot';
+        alert("Your coffee has been reheated");
+    }
+  }
 };
 
+console.log(myCoffee.flavour);
+myCoffee.temperature = 'cold';//Syntax 1
+myCoffee["temperature"] = "lukewarm"; // Syntax 2
+myCoffee.reheat();
+
+/*
+Exception: ReferenceError: myCOffee is not defined
+@Scratchpad/5:26:1
+*/
