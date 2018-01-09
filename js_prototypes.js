@@ -10,14 +10,28 @@
 'use strict';
 
 var arr = ['red','blue','green'];
-Object.defineProperty(arr,'last',{
+Object.defineProperty(Array.prototype,'last',{
          get:function(){
             return this[this.length-1];
          }
 })
 
 console.log(arr.last);
+
+var arr1 = [1,2,3,"feouwh"];
+console.log(arr1.last);
 /*
 Exception: SyntaxError: missing ) after argument list
 @Scratchpad/5:13
+*/
+/*
+Exception: TypeError: can't redefine non-configurable property "last"
+@Scratchpad/5:13:1
+*/
+
+var ar2 = new Array(1,2,3);
+console.log(ar2);
+/*
+Exception: TypeError: can't redefine non-configurable property "last"
+@Scratchpad/5:13:1
 */
