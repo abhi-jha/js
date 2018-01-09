@@ -14,8 +14,23 @@ function Cat(name, color){
 }
 var cat = new Cat('Fluffy', 'White');
 
-console.log(cat)
+console.log(cat);
 /*
 Exception: ReferenceError: display is not defined
 @Scratchpad/1:17:1
 */
+
+class Cat1{
+  constrctor(name, color){
+    this.name = name;
+    this.color = color;
+  }
+  speak(){
+    window.display(this.name);
+    window.display(this.color);
+  }
+}
+
+var cat1 = new Cat1('Fluffy', 'White');
+cat1.speak();
+
