@@ -62,7 +62,7 @@ Object.defineProperty(o,'toString',
 
 Object.defineProperty(o,'toString',{configurable:'false'});
 
-Object.defineProperty(o,'toString',{enumerable:'true'});
+//Object.defineProperty(o,'toString',{enumerable:'true'});
 
 console.log(o.toString());
-//console.log(Object.keys(o));
+console.log(Object.keys(o));
